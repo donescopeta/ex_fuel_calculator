@@ -7,7 +7,7 @@ defmodule FuelCalculator do
     to: FuelCalculator.ComputeLaunchFuel,
     as: :call
 
-  defdelegate compute_path(mass, gravity),
+  defdelegate compute_path(mass, path),
     to: FuelCalculator.FlightPath,
     as: :call
 end
