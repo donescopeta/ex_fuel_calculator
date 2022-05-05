@@ -1,8 +1,8 @@
 defmodule FuelCalculator.ComputeLandingFuel do
 
   @spec call(float() | integer(), float()) :: float()
-  def call(fuel, gravity) do
-    compute(fuel, gravity, 0)
+  def call(mass, gravity) do
+    compute(mass, gravity, 0)
   end
 
   defp compute(0, _gravity, sum) do
