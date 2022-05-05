@@ -9,7 +9,7 @@ defmodule FuelCalculator.ComputeLaunchFuel do
   end
 
   defp compute(mass, gravity, sum) do
-    fuel = max(mass * gravity * 0.042 - 42, 0)
+    fuel = max(mass * gravity * 0.042 - 33, 0)
 
     compute(fuel, gravity, sum + fuel)
   end
